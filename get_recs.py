@@ -105,7 +105,6 @@ def load_json(fname):
 
 if __name__ == "__main__":
 
-    # this_len = len(sys.argv)
     try:
         FNAME = sys.argv[1]
         NUM_PROCS = int(sys.argv[2])
