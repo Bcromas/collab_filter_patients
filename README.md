@@ -18,7 +18,7 @@ NMF falls under the general category of matrix factorization techniques where a 
 <a title="Qwertyus / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:NMF.png"><img width="512" alt="NMF" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/NMF.png"></a>
 
 ## Surprise library
-The Surprise library is a SciPy add-on package written in Python. It provides an experience similar to that of scikit-learn. Although some interactions are different than what you might expect especially given the nuances in creating a train-test split for recommendation data. The [FAQ page](https://surprise.readthedocs.io/en/stable/FAQ.html){:target="_blank"} is a good reference.
+The Surprise library is a SciPy add-on package written in Python. It provides an experience similar to that of scikit-learn. Although some interactions are different than what you might expect especially given the nuances in creating a train-test split for recommendation data. The [FAQ page](https://surprise.readthedocs.io/en/stable/FAQ.html) is a good reference.
 
 <img src="images/surprise_logo.png" width="400" height="100" />
 
