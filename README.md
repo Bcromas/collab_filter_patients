@@ -12,13 +12,6 @@ Each patient's recommendations are written to a file named *datetime*_RECS_FOR-*
 
 The code relies on non-negative matrix factorization (NMF) to uncover and leverage latent factors from a patient-procedure matrix. NMF was selected after evaluating a number of other algorithms including KNN, SVD, and one that generates predictions based on (an assumed) normal distribution. Given the nature of the solution, it could be applied in a variety of contexts (e.g. other patients) and extended to new scenarios (e.g. book recommendations) however hyperparameter tuning and re-evaluation of the core algorithm would be ideal for the latter.
 
-## JSON file
-The JSON file is expected to be in a simple format where the keys are *patient_name* and 'Procedures'. A sample is shown below.
-
-<img src="json_example.png" width="200" height="200" />
-
-Changes can be made to load_json() to faciliate other files and structures.
-
 ## NMF
 NMF falls under the general category of matrix factorization techniques where a larger matrix is decomposed into smaller matrices. The decomposition process unveils latent factors hidden in the data. While the true nature of these factors may be difficult to acertain they indicate some attribute(s) common to items in the matrix (e.g. patients with cardiovascular diseases).
 
@@ -27,4 +20,11 @@ NMF falls under the general category of matrix factorization techniques where a 
 ## Surprise library
 The Surprise library is a SciPy add-on package written in Python. It provides an experience similar to that of scikit-learn. Although some interactions are different than what you might expect especially given the nuances in creating a train-test split for recommendation data. The [FAQ page](https://surprise.readthedocs.io/en/stable/FAQ.html) is a good reference.
 
-<img src="surprise_logo.png" width="400" height="100" />
+<img src="images/surprise_logo.png" width="400" height="100" />
+
+## JSON file
+The JSON file is expected to be in a simple format where the keys are *patient_name* and 'Procedures'. A sample is shown below.
+
+<img src="images/json_example.png" width="200" height="200" />
+
+Changes can be made to load_json() to faciliate other files and structures.
