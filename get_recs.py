@@ -19,12 +19,12 @@ def export_preds(n_preds, orig_fname):
     now = datetime.datetime.now()
     stamp = f"{now.year}_{now.month}_{now.day}_{now.hour}{now.minute}"
 
-    with open(f"{stamp}_PREDICTIONS_FOR-{orig_fname}", "w") as outfile:
+    with open(f"{stamp}_RECS_FOR-{orig_fname}", "w") as outfile:
         outfile.write(json.dumps(n_preds, indent=4))
 
     print("Done!")
 
-def get_top_n(these_preds, n=10):
+def get_top_n(these_preds, n):
     """
     Return the top-N recommendations for each patient from a set of predictions.
     From the surprise library FAQ. 
